@@ -1,0 +1,463 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.8)), url("images/background.jpg") no-repeat;
+  }
+
+  #home {
+    height: 100vh;
+  }
+
+/* Başlık Stili */
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #eb1212;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-top: 100px;
+    /* Diğer Stil Özellikleri */
+  }
+  /* Paragraf Stili */
+  p {
+    font-size: 24px;
+    color: #23cfa4;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    /* Diğer Stil Özellikleri */
+  }
+
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+
+    padding: 20px;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5fb1e0;
+    color: #fff;
+    padding: 10px;
+    z-index: 2;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 30px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  section {
+    padding: 40px;
+  }
+
+  section h1, section h2 {
+    color: #333;
+  }
+
+  section p {
+    color: #666;
+  }
+
+  section a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+
+  .car-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .car {
+    text-align: center;
+    width: 30%;
+  }
+
+  .car img {
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }
+
+  form button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  .shopping-cart {
+    display: flex;
+    align-items: center;
+  }
+
+  .shopping-cart img {
+    height: 30px;
+    margin-right: 5px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .shopping-cart:hover img {
+    transform: scale(1.1);
+  }
+
+  * {box-sizing:border-box}
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  #services {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  #services h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  #services p {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  
+  .service {
+    display: inline-block;
+    width: 300px;
+    margin: 0 20px;
+    text-align: center;
+    vertical-align: top;
+  }
+  
+  .service img {
+    width: 100%;
+    height: 200px; /* Eklediğimiz yeni özellik */
+    object-fit: cover; /* Eklediğimiz yeni özellik */
+    margin-bottom: 20px;
+  }
+  
+  .service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .service p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  #services a {
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 30px;
+  }
+  
+  #services a:hover {
+    background-color: #555;
+  }
+
+  #fleet {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  #fleet h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #fleet p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .car-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .car {
+    width: 300px;
+    margin: 20px;
+  }
+  
+  .car img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .car:hover img {
+    transform: scale(1.2);
+  }
+  
+  .car h3 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .car p {
+    font-size: 16px;
+    color: #666;
+  }
+
+  .add-to-cart {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #45a049;
+  }
+  
+  .cart-container {
+    margin: 20px;
+  }
+
+  .cart-container img {
+    max-width: 200px;
+    height: auto;
+  }
+
+  
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+
+  .total {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: right;
+  }
+
+  .cartoon-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .cartoon-button:hover {
+    background-color: #45a049;
+  }
+
+  .cartoon-button:active {
+    background-color: #3e8e41;
+    box-shadow: none;
+  }
+
+  .cartoon-button:focus {
+    outline: none;
+  }
+
+  .cbutton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .cbutton:hover {
+    background-color: #45a049;
+  }
+
+  .cbutton:active {
+    background-color: #3e8e41;
+    box-shadow: none;
+  }
+
+  .cbutton:focus {
+    outline: none;
+  }

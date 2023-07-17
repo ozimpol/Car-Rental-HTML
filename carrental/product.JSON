@@ -1,0 +1,63 @@
+[
+    {
+      "name": "Car Model 1",
+      "image": "images/car1.jpg",
+      "price": 100
+    },
+    {
+      "name": "Car Model 2",
+      "image": "images/car2.jpg",
+      "price": 100
+    },
+    {
+      "name": "Car Model 3",
+      "image": "images/car3.jpg",
+      "price": 100
+    },
+    {
+      "name": "Car Model 4",
+      "image": "images/car4.jpg",
+      "price": 100
+    },
+    {
+      "name": "Car Model 5",
+      "image": "images/car5.jpg",
+      "price": 100
+    },
+    {
+      "name": "Car Model 6",
+      "image": "images/car6.jpg",
+      "price": 100
+    },
+    {
+      "name": "Car Model 7",
+      "image": "images/car7.jpg",
+      "price": 100
+    },
+    {
+      "name": "Car Model 8",
+      "image": "images/car8.jpg",
+      "price": 100
+    },
+    {
+      "name": "Car Model 9",
+      "image": "images/car9.jpg",
+      "price": 100
+    },
+    {
+      "name": "Car Model 10",
+      "image": "images/car10.jpg",
+      "price": 100
+    },
+    {
+      "name": "Car Model 11",
+      "image": "images/car11.jpg",
+      "price": 100
+    },
+    {
+      "name": "Car Model 12",
+      "image": "images/car12.jpg",
+      "price": 100
+    }
+  ]
+  

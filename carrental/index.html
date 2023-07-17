@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Rental Company</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+          <img src="images/logo.png" alt="Car Rental Company Logo">
+          <h2>Car Rental Company</h2>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#fleet">Fleet</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="shopping-cart">
+          <a href="#cart-section">
+            <img src="images/cart.png" alt="Shopping Cart Icon"></a>
+            <span id="cart-item-count">0 items</span>
+          
+        </div>
+        </div>
+      </header>
+    
+      <section id="home">
+        <h1>Welcome to Car Rental Company</h1>
+        <p>Experience the joy of driving with our wide range of rental cars.</p>
+        <div class="slideshow-container">
+    
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="images/car1.jpg" style="width:100%">
+              <div class="text">Caption Text</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="images/car2.jpg" style="width:100%">
+              <div class="text">Caption Two</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="images/car3.jpg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>    
+      </section>
+    
+      <section id="services">
+        <h2>Our Services</h2>
+        <p>Choose from our range of services to meet your car rental needs.</p>
+        <div class="service">
+            <img src="images/service1.jpg" alt="Service 1">
+            <h3>Short-term Rentals</h3>
+            <p>Rent a car for a short duration to meet your immediate transportation needs. Whether it's for a day trip or a weekend getaway, our short-term rentals offer flexibility and convenience.</p>
+          </div>
+          <div class="service">
+            <img src="images/service2.jpg" alt="Service 2">
+            <h3>Long-term Rentals</h3>
+            <p>For those who require a car for an extended period, our long-term rentals provide cost-effective solutions. Enjoy competitive rates and the freedom of having a reliable vehicle without the commitments of ownership.</p>
+          </div>
+          <div class="service">
+            <img src="images/service3.jpg" alt="Service 3">
+            <h3>Luxury Car Rental</h3>
+            <p>Elevate your driving experience with our luxury car rental service. Indulge in the comfort, style, and sophistication of our premium vehicles for special occasions, business trips, or simply to treat yourself to a memorable ride.</p>
+          </div>
+      </section>
+    
+      <section id="fleet">
+        <h2>Our Fleet</h2>
+        <p>Discover our diverse fleet of well-maintained vehicles.</p>
+        <div class="car-list">
+        <div class="car">
+          <img src="images/car1.jpg" alt="Car 1">
+          <h3>Car Model 1</h3>
+          <p>Description of Car Model 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button class="add-to-cart" onclick="addToCart('Car Model 1', 'images/car1.jpg', 100)">Add to Cart</button>
+        </div>
+        <div class="car">
+          <img src="images/car2.jpg" alt="Car 2">
+          <h3>Car Model 2</h3>
+          <p>Description of Car Model 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button class="add-to-cart" onclick="addToCart('Car Model 2', 'images/car2.jpg', 100)">Add to Cart</button>
+        </div>
+        <div class="car">
+          <img src="images/car3.jpg" alt="Car 3">
+          <h3>Car Model 3</h3>
+          <p>Description of Car Model 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button class="add-to-cart" onclick="addToCart('Car Model 3', 'images/car3.jpg', 100)">Add to Cart</button>
+        </div>
+        <div class="car">
+          <img src="images/car4.jpg" alt="Car 4">
+          <h3>Car Model 4</h3>
+          <p>Description of Car Model 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button class="add-to-cart" onclick="addToCart('Car Model 4', 'images/car4.jpg', 100)">Add to Cart</button>
+        </div>
+        <div class="car">
+          <img src="images/car5.jpg" alt="Car 5">
+          <h3>Car Model 5</h3>
+          <p>Description of Car Model 5. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button class="add-to-cart" onclick="addToCart('Car Model 5', 'images/car5.jpg', 100)">Add to Cart</button>
+        </div>
+        <div class="car">
+          <img src="images/car6.jpg" alt="Car 6">
+          <h3>Car Model 6</h3>
+          <p>Description of Car Model 6. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button class="add-to-cart" onclick="addToCart('Car Model 6', 'images/car6.jpg', 100)">Add to Cart</button>
+        </div>
+        <div class="car">
+          <img src="images/car7.jpg" alt="Car 7">
+          <h3>Car Model 7</h3>
+          <p>Description of Car Model 7. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button class="add-to-cart" onclick="addToCart('Car Model 7', 'images/car7.jpg', 100)">Add to Cart</button>
+        </div>
+        <div class="car">
+            <img src="images/car8.jpg" alt="Car 8">
+            <h3>Car Model 8</h3>
+            <p>Description of Car Model 8. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button class="add-to-cart" onclick="addToCart('Car Model 8', 'images/car8.jpg', 100)">Add to Cart</button>
+        </div>
+        <div class="car">
+            <img src="images/car9.jpg" alt="Car 9">
+            <h3>Car Model 9</h3>
+            <p>Description of Car Model 9. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button class="add-to-cart" onclick="addToCart('Car Model 9', 'images/car9.jpg', 100)">Add to Cart</button>
+        </div>
+          <div class="car">
+            <img src="images/car10.jpg" alt="Car 10">
+            <h3>Car Model 10</h3>
+            <p>Description of Car Model 10. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button class="add-to-cart" onclick="addToCart('Car Model 10', 'images/car10.jpg', 100)">Add to Cart</button>
+        </div>
+          <div class="car">
+            <img src="images/car11.jpg" alt="Car 11">
+            <h3>Car Model 11</h3>
+            <p>Description of Car Model 11. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button class="add-to-cart" onclick="addToCart('Car Model 11', 'images/car11.jpg', 100)">Add to Cart</button>
+        </div>
+          <div class="car">
+            <img src="images/car12.jpg" alt="Car 12">
+            <h3>Car Model 12</h3>
+            <p>Description of Car Model 12. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button class="add-to-cart" onclick="addToCart('Car Model 12', 'images/car12.jpg', 100)">Add to Cart</button>
+        </div>
+        </div>
+
+    </section>
+    <section id="cart-section">
+      <div class="cart-container">
+        <h2>Car Rental Cart</h2>
+        <table id="cart-table">
+          <thead>
+            <tr>
+              <th>Car</th>
+              <th>Price</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="cart-items">
+          </tbody>
+        </table>
+        <div class="total">
+          Total: <span id="total-amount">0</span> $
+        </div>
+        <button class="cbutton" onclick="checkout()">Checkout</button>
+      </div>
+    </section>
+    
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us for inquiries and bookings.</p>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    
+      <footer>
+        <p>&copy; 2023 Car Rental Company. All rights reserved.</p>
+      </footer>
+    </body>
+    </html>
